@@ -3,6 +3,7 @@ def get_max_neighbor(l, r, fence):
     count = 0
     if r - l <= 1:
         return count
+
     for i in range(l, r-1):
         cur = fence[i]
         if (fence[i - 1] < cur) and (fence[i + 1] < cur):
