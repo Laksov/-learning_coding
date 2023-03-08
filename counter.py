@@ -5,10 +5,12 @@ n = int(input())
 d = dict()
 for i in range(l, r + 1):
     d[i] = 0
+
 for el in input().split():
     num = int(el)
-    if num <= r and num >= l:
+    if r >= num >= l:
         if num in d.keys():
             d[num] += 1
+
 for i in range(l, r + 1):
     print(f"{i}: {d[i]}")
