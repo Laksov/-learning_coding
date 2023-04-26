@@ -10,3 +10,4 @@ def treb(n):
 n = int(input())
 ans = treb(n)
 print(ans)
+
